@@ -98,7 +98,6 @@ handleform=(e)=>{
 
 
 
-
     render(){
     return (
         
@@ -167,17 +166,17 @@ handleform=(e)=>{
         </tr>
         </thead>
         <tbody>
-         {this.state.details.map((a, index) => (
-            <tr key={index}>
-              <td>{a.fname}</td>
-              <td>{a.lname}</td>
-              <td>{a.email}</td>
-              <td>{a.food}</td>
-              <td>{a.marital}</td>
-              <td>{a.selectedCountry}</td>
-              <td>{a.selectedState}</td>
+         {this.state.details.map((a, index) => {
+            return(<tr key={a.id}>
+              <td>{a.this.state.fname}</td>
+              <td>{a.this.state.lname}</td>
+              <td>{a.this.state.email}</td>
+              <td>{a.this.state.food}</td>
+              <td>{a.this.state.marital}</td>
+              <td>{a.this.state.selectedCountry}</td>
+              <td>{a.this.state.selectedState}</td>
             </tr>
-          ))} 
+          )})} 
           </tbody>
         </table>
        </div> 
